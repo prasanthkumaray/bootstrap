@@ -498,3 +498,10 @@ section.module.parallax-1 {
 		float: none;
 	}
 }
+
+.product-desc-container {
+	height:400px;
+	display:table-cell;
+	vertical-align: middle;
+	width:100%;
+}
