@@ -1,0 +1,16 @@
+<div oc-lazy-load="['js/controllers/JeansController.js']">
+    <div ng-controller="JeansController">
+        <div class="container min-margin-top">
+            <div class="row">
+                <div ng-repeat="product in products track by $index" class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-center main-gal-margin">
+                    <a ng-click="saveClicked(product)" href="#!/item" class="border min-padding">
+                        <img class="zoom img-full-width" src='assets/jeans/{{product}}.jpg' data-zoom-image="assets/jeans/{{product}}.jpg"/>
+                        <p class="header-link">
+                            Product name
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

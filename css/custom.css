@@ -407,7 +407,6 @@ section.module.parallax-1 {
 	font-size: 14px;
 	font-weight: normal;
 	color:  #d1d2d2;
-
 	width: 400px;
 	padding: 18px;
 }
@@ -458,10 +457,6 @@ section.module.parallax-1 {
 		font-size: 12px;
 	}
 
-	.footer-distributed form input,
-	.footer-distributed form textarea{
-		width: 250px;
-	}
 
 	.footer-distributed form button{
 		padding: 10px 35px;
@@ -473,12 +468,19 @@ section.module.parallax-1 {
 
 	.footer-distributed{
 		padding: 30px;
+		text-align:center;
 	}
+
+	.footer-distributed form input,
+.footer-distributed form textarea{
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+}
 
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
 		float: none;
-		max-width: 300px;
 		margin: 0 auto;
 	}
 

@@ -1,0 +1,16 @@
+<div oc-lazy-load="['js/controllers/TshirtController.js']">
+    <div ng-controller="TshirtController">
+        <div class="container min-margin-top">
+            <div class="row">
+                <div ng-repeat="product in products track by $index" class="col-lg-6 col-md-6 col-xs-6 col-sm-6 text-center main-gal-margin">
+                    <a href="#!/item" ng-click="saveClicked(product)" class="border min-padding">
+                        <img class="zoom img-full-width" src='assets/tshirts/{{product}}.jpg' data-zoom-image="assets/tshirts/{{product}}.jpg"/>
+                        <p class="header-link">
+                            Product name
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
