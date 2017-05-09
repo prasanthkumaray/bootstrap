@@ -17,9 +17,16 @@ angular.module('myApp').controller('HeaderController', ['$scope', '$location', f
             $(".navbar.navbar-default img").hide();
         }
     });
-    $('a[href^="#!'+$location.path()+'"]').parent().addClass('active');
+    if($location.path()!="/" || $location.path() != 'home')
+    {
+      $('a[href^="#!'+$location.path()+'"]').parent().addClass('active');
+    }
+    
     $scope.$on('$routeChangeStart', function(next, current) {
       $(".nav.navbar-nav li").removeClass("active");
-      $('a[href^="#!'+$location.path()+'"]').parent().addClass('active');
+      if($location.path()!="/" || $location.path() != 'home')
+      {
+        $('a[href^="#!'+$location.path()+'"]').parent().addClass('active');
+      }
     });
 }]);
